@@ -1,0 +1,35 @@
+The process
+Complete the following steps:
+
+Open your command line or terminal
+cd to your thinkful projects directory
+Run npx create-react-app react-playground to create a new folder called react-playground with a React app inside
+cd ./react-playground to go into the new directory
+Run npm install to install all the dependencies we need
+Run the following commands to remove the following files from this directory:
+rm ./src/serviceWorker.js
+rm ./src/App.css
+rm ./src/logo.svg
+Update the content of ./src/App.js and ./src/index.js as follows to create a minimal starting point for the application
+
+Copy and paste the below code into ./src/App.js replacing what was already there (we'll explain it shortly).
+
+import React from 'react';
+
+function App() {
+  return (
+    <main className='App'>
+      {/* content goes here */}
+    </main>
+  );
+}
+
+export default App;
+Now replace the content of ./src/index.js with the following code:
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+import './index.css';
+
+ReactDOM.render(<App />, document.getElementById('root'));
