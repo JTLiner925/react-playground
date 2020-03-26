@@ -1,6 +1,8 @@
 .split {
     flex: 1;
-    /* component takes up 
-    1 flex each */
     padding: 1em;
   }
+   /* component takes up 
+    1 flex each */
+
+    

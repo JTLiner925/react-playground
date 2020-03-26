@@ -7,3 +7,23 @@
   /* Webpack adds these styles into the browser 
   for us when we import them into our 
   JavaScript files. */
+
+  .left {
+    background-color: darkslategray;
+    color: azure;
+  }
+  
+  .right {
+    background-color: wheat;
+    color: firebrick;
+  }
+
+  /* Normally we would think to  style these classNames in App.css, 
+  as they were added in the App.js file. 
+  Let's make the left Split dark with light 
+  text and the right Split the vice versa. 
+  Actually nothing happens!
+   We need to make the Split component configurable! 
+   We need to make the 
+   Split component understand the new classNames.
+  */
