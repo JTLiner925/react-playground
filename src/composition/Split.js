@@ -1,5 +1,6 @@
-import React from 'react'
-import { directive } from '@babel/types'
+import React from 'react';
+import { directive } from '@babel/types';
+import './Split.css';
 //Inside Split.js we will import React so that we can use JSX.
 
 //when creating your component capitalize the first letter
