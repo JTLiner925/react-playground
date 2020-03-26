@@ -8,11 +8,12 @@ import { directive } from '@babel/types';
 //when using props.children you need to put props in the arg
 function Split(props) {
     const combinedClassName = `split ${props.className}`
+    const newStyles = { flex: props.flexBasis };
     return (
         //remember className not class
         //if you want to put the text in the 
         //app file you must use {props.children}
-        <div className={combinedClassName}>
+        <div className={combinedClassName} style={newStyles}>
       {props.children}
     </div>
     );
