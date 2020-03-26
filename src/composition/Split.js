@@ -4,12 +4,15 @@ import './Split.css';
 //Inside Split.js we will import React so that we can use JSX.
 
 //when creating your component capitalize the first letter
-function Split() {
+//when using props.children you need to put props in the arg
+function Split(props) {
     return (
         //remember className not class
-        <div className='split'>
-        This is the content of the split component. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ex velit suscipit facere officia?
-        </div>
+        //if you want to put the text in the 
+        //app file you must use {props.children}
+        <div className="split">
+      {props.children}
+    </div>
     );
 }
 
