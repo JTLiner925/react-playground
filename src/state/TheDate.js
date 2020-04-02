@@ -2,12 +2,25 @@ import React from "react";
 
 class TheDate extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = { datetime: new Date() };
+    console.log('constructor')
   }
+  componentDidMount() {
+    console.log('componentDidMount')
+    this.interval = setInterval(() => {
+        console.log('setInterval')
+      this.setState({
+          datetime: new Date ()
+      })
+    }, 1000)
+}
+    componentWillUnmount(){
+        clearInterval(this.interval)
+    }
   render() {
-    console.log(this.state);
-    return <div>{this.state.datetime.toLocaleString()}</div>;
+    console.log('render')
+    return <div>Today is: {this.state.datetime.toLocaleString()}</div>;
   }
 }
 
