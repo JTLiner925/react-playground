@@ -1,12 +1,40 @@
 import React from "react";
 
 class Bomb extends React.Component {
-    render(){
-        return(
-            <div>
-                <p>hi</p>
-            </div>
-        )
+  constructor(props) {
+    super(props);
+    this.state = { count: 0 };
+    console.log("constructor");
+  }
+  componentDidMount() {
+    this.interval = setInterval(() => {
+      console.log("setInterval");
+      this.setState({
+        count: this.state.count + 1
+      });
+    }, 1000);
+  }
+  componentWillUnmount() {
+    clearInterval(this.interval);
+  }
+  renderDisplay(){
+    const { count } = this.state
+    if (count >= 8) {
+      clearInterval(this.interval)
+      return 'BOOM!!!!'
+    } else if (count % 2 === 0) {
+      return 'tick'
+    } else {
+      return 'tock'
     }
+    
+  }
+  render() {
+    return (
+      <div className="CountdownBomb">
+        <p>{this.renderDisplay()}</p>
+      </div>
+    );
+  }
 }
 export default Bomb;
