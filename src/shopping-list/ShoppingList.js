@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 import ShoppingItem from './ShoppingItem'
 
 export default function ShoppingList(props) {
@@ -8,6 +8,8 @@ export default function ShoppingList(props) {
         <ShoppingItem
           key={i}
           item={item}
+          onDeleteItem={props.onDeleteItem}
+          onCheckItem={props.onCheckItem}
         />
       )}
     </ul>
