@@ -33,8 +33,8 @@ class App extends Component {
         <h2>Accordion</h2>
         <Accordion sections={sections} />
       </div>
-  );
-}
+    );
+  }
 }
 
 export default App;
