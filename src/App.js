@@ -1,9 +1,11 @@
 import React from 'react';
+import Demonym from './demonymapp/demonym';
+import './App.css';
 
 function App() {
   return (
     <main className='App'>
-      {/* content goes here */}
+      <Demonym />
     </main>
   );
 }
