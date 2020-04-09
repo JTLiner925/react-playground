@@ -1,13 +1,16 @@
-import React from 'react';
-import Demonym from './demonymapp/demonym';
+import React, { Component } from 'react';
 import './App.css';
 
-function App() {
-  return (
-    <main className='App'>
-      <Demonym />
-    </main>
-  );
+import DemonynApp from './demonymapp/demonymApp';
+
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <DemonynApp/>
+      </div>
+    );
+  }
 }
 
 export default App;
