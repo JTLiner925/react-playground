@@ -1,4 +1,4 @@
-.demonym {
-    display: flex;
-    flex: 2;
+.demonym_app__placeholder{
+    margin: 5px;
+    font-size: 24px;
 }
