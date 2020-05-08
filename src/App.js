@@ -5,7 +5,9 @@ import RouletteGun from './state-drills/RouletteGun';
 import Accordion from './state-drills/Accordion';
 import Tabs from './state/Tabs';
 import './App.css'
-
+//click count, everytime you click the button it adds one
+//Router with three routes instead of three seperate pages
+//passing a callback prop to child component
 const tabsProp = [
   { name: 'First tab',
     content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam exercitationem quos consectetur expedita consequatur. Fugit, sapiente aspernatur corporis velit, dolor eum reprehenderit provident ipsam, maiores incidunt repellat! Facilis, neque doloremque.' },
